@@ -23,7 +23,7 @@ Add the repository and dependency to your `pom.xml`:
 <repositories>
     <repository>
         <id>jitpack.io</id>
-        <url>[https://jitpack.io](https://jitpack.io)</url>
+        <url>https://jitpack.io</url>
     </repository>
 </repositories>
 
@@ -46,7 +46,7 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         mavenCentral()
-        maven { url '[https://jitpack.io](https://jitpack.io)' }
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -65,7 +65,7 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         mavenCentral()
-        maven { url = uri("[https://jitpack.io](https://jitpack.io)") }
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
