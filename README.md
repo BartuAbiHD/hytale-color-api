@@ -4,20 +4,20 @@
 [![JitPack](https://jitpack.io/v/BartuAbiHD/hytale-color-api.svg)](https://jitpack.io/#BartuAbiHD/hytale-color-api)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Hytale mod geliştiricileri için mesajları kolayca renklendirmeyi sağlayan hafif bir kütüphane. Bu API sayesinde standart Minecraft renk kodlarını (`&a`, `&e`, `&c` vb.) Hytale'in `Message` objesine otomatik olarak dönüştürebilirsiniz.
+A lightweight and efficient library designed for Hytale mod developers to easily colorize chat messages. This API automatically parses standard Minecraft-style color codes (e.g., `&a`, `&e`, `&c`) into Hytale's native `Message` objects.
 
-## ✨ Özellikler
-- Standart renk kodlarını (`&0`-`&f`) destekler.
-- Mesaj sıfırlama (`&r`) desteği.
-- Hytale `Message` API ile tam uyumlu.
-- Kullanımı son derece basit ve hızlı.
+## ✨ Features
+- Supports all standard Minecraft color codes (`&0` - `&f`).
+- Includes message reset code (`&r`) support.
+- Fully compatible with the Hytale `Message` API.
+- Extremely simple implementation and high performance.
 
-## 🚀 Kurulum
+## 🚀 Installation
 
-Kütüphaneyi projenize dahil etmek için kullandığınız yapı sistemine göre aşağıdaki adımları izleyin.
+Follow the steps below according to your build system to include the library in your project.
 
 ### Maven
-`pom.xml` dosyanıza önce depoyu (repository), sonra bağımlılığı (dependency) ekleyin:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -39,7 +39,7 @@ Kütüphaneyi projenize dahil etmek için kullandığınız yapı sistemine gör
 
 ### Gradle (Groovy)
 
-`build.gradle` dosyanıza ekleyin:
+Add this to your `build.gradle`:
 
 ```groovy
 dependencyResolutionManagement {
@@ -58,7 +58,7 @@ dependencies {
 
 ### Gradle (Kotlin DSL)
 
-`build.gradle.kts` dosyanıza ekleyin:
+Add this to your `build.gradle.kts`:
 
 ```kotlin
 dependencyResolutionManagement {
@@ -75,9 +75,9 @@ dependencies {
 
 ```
 
-## 📖 Kullanım Örneği
+## 📖 Usage Example
 
-Kütüphaneyi kullanmak için tek yapmanız gereken `ChatColor.parse()` metodunu çağırmaktır.
+Simply call the `ChatColor.parse()` method to transform strings with color codes into Hytale Message objects.
 
 ```java
 import me.bartuabihd.hytaleutils.ChatColor;
@@ -85,22 +85,22 @@ import com.hypixel.hytale.server.core.universe.PlayerRef;
 
 public class MyMod {
     public void welcomePlayer(PlayerRef player) {
-        // & kodlarını kullanarak renkli mesaj oluşturun
-        String text = "&d[Sunucu] &aHoş geldin, &e" + player.getName() + "!";
+        // Create a colorized string using & codes
+        String text = "&d[Server] &aWelcome to the server, &e" + player.getName() + "!";
         
-        // ChatColor.parse() ile Hytale Message objesine çevirin ve gönderin
+        // Parse and send as a Hytale Message object
         player.sendMessage(ChatColor.parse(text));
     }
 }
 
 ```
 
-## 🤝 Katkıda Bulunma
+## 🤝 Contributing
 
-Katkıda bulunmak isterseniz bir "Pull Request" açabilir veya hata bildirmek için "Issues" kısmını kullanabilirsiniz.
+Contributions are welcome! Feel free to open a **Pull Request** or report bugs via the **Issues** tab.
 
-## 📄 Lisans
+## 📄 License
 
-Bu proje **MIT** lisansı ile korunmaktadır.
+This project is licensed under the **MIT License**.
 
 ```
