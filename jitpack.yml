@@ -1,5 +1,5 @@
 jdk:
-  - openjdk21
+  - openjdk25
 before_install:
   - mkdir -p libs
   - wget -O libs/server-1.0.0.jar "https://barindirici.com.tr/hytale-server/server-1.0.0.jar"
