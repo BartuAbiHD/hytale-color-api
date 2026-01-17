@@ -1,6 +1,6 @@
 {
   "Group": "me.bartuabihd",
-  "Name": "hytale-color-api",
+  "Name": "ChatColor",
   "Version": "0.0.2",
   "Description": "Hytale Chat Color API for server developers. Easily add colored text to your Hytale server plugins.",
   "Authors": [
