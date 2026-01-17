@@ -2,7 +2,7 @@
   "Group": "me.bartuabihd",
   "Name": "hytale-color-api",
   "Version": "0.0.2",
-  "Description": "Essentials mod for Hytale.",
+  "Description": "Hytale Chat Color API for server developers. Easily add colored text to your Hytale server plugins.",
   "Authors": [
     {
       "Name": "BartuAbiHD",
