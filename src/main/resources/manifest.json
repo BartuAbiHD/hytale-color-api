@@ -1,0 +1,24 @@
+{
+  "Group": "me.bartuabihd",
+  "Name": "hytale-color-api",
+  "Version": "0.0.2",
+  "Description": "Essentials mod for Hytale.",
+  "Authors": [
+    {
+      "Name": "BartuAbiHD",
+      "Email": "",
+      "Url": "https://yton.tr/@BartuAbiHD"
+    },
+    {
+      "Name": "DrawWEB",
+      "Email": "info@draw.web.tr",
+      "Url": "https://discord.draw.web.tr"
+    }
+  ],
+  "Website": "",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "me.bartuabihd.hytaleutils.ChatColor"
+}
