@@ -2,10 +2,18 @@ package me.bartuabihd.hytaleutils;
 
 import java.util.*;
 import com.hypixel.hytale.server.core.*;
+import com.hypixel.hytale.server.core.plugin.JavaPlugin;
+import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 
-public class ChatColor
+import javax.annotation.Nonnull;
+
+public class ChatColor extends JavaPlugin
 {
     private static final Map<Character, String> COLORS;
+
+    public ChatColor(@Nonnull JavaPluginInit init) {
+        super(init);
+    }
 
     public static Message parse(final String text) {
         final Message message = Message.empty();
